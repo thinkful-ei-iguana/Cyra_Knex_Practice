@@ -16,4 +16,12 @@ CREATE TABLE IF NOT EXISTS shopping_list (
     checked BOOLEAN DEFAULT FALSE,
     category grocery NOT NULL
 
-)
+);
+
+DROP TABLE IF EXISTS grocery;
+CREATE TYPE grocery as enum (
+  'Main',
+  'Snack',
+  'Lunch',
+  'Breakfast'
+);

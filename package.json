@@ -1,13 +1,11 @@
 {
   "name": "express-boilerplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a boilerplate project used for starting new projects!",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --require test/setup.js",
-    "start": "node src/practice.js",
-    "predeploy": "npm audit",
-    "deploy": "git push heroku master"
+    "test": "mocha --require test/setup.js --watch",
+    "start": "node src/blogful.js"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +15,7 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "helmet": "^3.21.2",
-    "knex": "^0.20.4",
+    "knex": "^0.20.6",
     "morgan": "^1.9.1",
     "pg": "^7.15.2"
   },
@@ -26,5 +24,16 @@
     "mocha": "^6.2.2",
     "nodemon": "^2.0.2",
     "supertest": "^4.0.2"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thinkful-ei-iguana/Cyra_Knex_Practice.git"
+  },
+  "bugs": {
+    "url": "https://github.com/thinkful-ei-iguana/Cyra_Knex_Practice/issues"
+  },
+  "homepage": "https://github.com/thinkful-ei-iguana/Cyra_Knex_Practice#readme"
 }
